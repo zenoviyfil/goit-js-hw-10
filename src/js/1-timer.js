@@ -38,10 +38,8 @@ const options = {
   onClose(selectedDates) {
     if (options.defaultDate >= selectedDates[0]) {
         iziToast.error({
-            title: 'ERROR',
             message: 'Please choose a date in the future',
         });
-    //   alert('Please choose a date in the future');
       startBtn.disabled = true;
     } else {
       startBtn.disabled = false;
@@ -52,7 +50,8 @@ const options = {
 };
 
 startBtn.addEventListener('click', () => {
-const countdown = setInterval(() => {
+    startBtn.disabled = true;
+    const countdown = setInterval(() => {
     const timeLaps = userSelectedDate - Date.now();
     const result = convertMs(timeLaps);
     const {days, hours, minutes, seconds} = result;
