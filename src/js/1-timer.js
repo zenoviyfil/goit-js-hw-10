@@ -1,5 +1,7 @@
 import flatpickr from "flatpickr";
+import iziToast from "izitoast";
 import 'flatpickr/dist/flatpickr.min.css';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const startBtn = document.querySelector('[data-start]')
 const day = document.querySelector('[data-days]')
@@ -36,8 +38,8 @@ const options = {
   onClose(selectedDates) {
     if (options.defaultDate >= selectedDates[0]) {
         iziToast.error({
-            title: 'Error',
-            message: 'Illegal operation',
+            title: 'ERROR',
+            message: 'Please choose a date in the future',
         });
     //   alert('Please choose a date in the future');
       startBtn.disabled = true;
