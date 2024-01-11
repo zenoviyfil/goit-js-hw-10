@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap');
+
+.form {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form{
+    font-family: 'Montserrat', sans-serif;
+}
+
+fieldset {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 330px;
+    height: 64px;
+    top: 138px;
+    left: 156px;
+    border-radius: 10px;
+    }
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    width: 360px;
+    height: 40px;
+    padding: 8px, 16px, 8px, 16px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background: #4E75FF;
+    color: #FFFFFF;
+}
+
+button:hover {
+    background: #6C8CFF;
+    cursor: pointer;
+}
