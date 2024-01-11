@@ -7,7 +7,7 @@
 @import url('./reset.css');
 @import url('./vite-promo.css');
 @import url('./header.css');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -32,11 +32,11 @@ ul {
 }
 
 .timer {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 50px;
 }
 
 .snackbar {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 50px;
 }
